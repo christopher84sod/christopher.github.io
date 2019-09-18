@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Styles/styles-intro.css">
+    <title>React</title>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <img class="react-logo" src="./Assets/react-logo.jpg" alt="React Logotype">
+        <h1 id="main-title">React</h1>
+
+        <a class="intro-hover" href="index.html">Hem</a>
+        <a class="intro-hover" href="Intro.html">SPA/Komponenter</a>
+        <a class="info-hover" href="Info.html">DOM/Bibliotek</a>
+        <a class="info-hover" href="Examples.html">JSX/Router</a>
+
+
+
+
+    </div>
+
+    <div class="my-buttons">
+        <button type="button" class="my-button" onclick="funkMyHeader()">Funk up the
+            header</button>
+        <button type="button" class="my-button" onclick="funkDownMyHeader()">Less Funk Please</button>
+
+        <button type="button" class="my-button" id="Name" onclick="stateBusiness()">State Your Business</button>
+
+    </div>
+
+    <script>
+        function funkMyHeader() {
+            document.getElementById("main-title").innerHTML = "Reeeeeeeeact!"
+
+        };
+        function funkDownMyHeader() {
+            document.getElementById("main-title").innerHTML = "React"
+        };
+        function stateBusiness() {
+            let name = prompt("Nöje, skola eller arbete? Ange anledningen för ditt besök:  ")
+            if (name === "nöje") {
+                alert(name + " toleraras inte här.")
+            }
+            else if (name === "skola") {
+                alert(name + " är viktigt, fortsätt du.")
+            }
+
+            else if (name === "arbete") {
+                alert(name + " är viktigt, fortsätt du.")
+            }
+
+
+            else {
+                alert("Hoppas du hittar det du söker")
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
